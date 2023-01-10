@@ -1,3 +1,6 @@
 .filters-align {
   float: right;
 }
+.container {
+  flex-flow:row wrap;
+}
