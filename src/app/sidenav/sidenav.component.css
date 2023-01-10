@@ -1,0 +1,21 @@
+li {
+    list-style: none;
+}
+.btn-box {
+    display: flex;
+}
+.btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.btn-red {
+    background-color: #F96057;
+}
+.btn-yellow {
+    background-color: #F8CE52;
+}
+.btn-green {
+    background-color: #5FCF65;
+}
