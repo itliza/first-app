@@ -3,6 +3,9 @@
     background-color: #3361B2;
     padding: 15px 20px;
     border-radius: 12px;
+    margin: -81px;
+    margin-left: 0px;
+
 }
 .logo-box {
     display: flex;
@@ -44,17 +47,4 @@ li {
 }
 .btn-green {
     background-color: #5FCF65;
-}
-
-.personal {
-    display: flex;
-    padding: 0;
-
-}
-.avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50px;
-    background-color: white;
-    padding: 0;
 }
