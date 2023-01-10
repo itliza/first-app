@@ -12,10 +12,6 @@ import {FlatTreeControl} from '@angular/cdk/tree';
 import {Component} from '@angular/core';
 import {MatTreeFlatDataSource, MatTreeFlattener} from '@angular/material/tree';
 
-/**
- * Food data with nested structure.
- * Each node has a name and an optional list of children.
- */
 interface FoodNode {
   name: string;
   children?: FoodNode[];
@@ -41,21 +37,18 @@ const TREE_DATA: FoodNode[] = [
   },
 ];
 
-/** Flat node with expandable and level information */
+
 interface ExampleFlatNode {
   expandable: boolean;
   name: string;
   level: number;
 }
 
-/**
- * @title Tree with flat nodes
- */
 @Component({
-  selector: 'tree-flat-overview-example',
-  templateUrl: 'tree-flat-overview-example.html',
+  selector: 'app-sidenav',
+  templateUrl: './sidenav.component.html',
 })
-export class TreeFlatOverviewExample {
+export class SidenavComponent {
   private _transformer = (node: FoodNode, level: number) => {
     return {
       expandable: !!node.children && node.children.length > 0,
