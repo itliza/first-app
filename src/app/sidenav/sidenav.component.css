@@ -3,6 +3,9 @@
     background-color: #3361B2;
     padding: 15px 20px;
     border-radius: 12px;
+    margin: -81px;
+    margin-left: 0px;
+
 }
 .logo-box {
     display: flex;
