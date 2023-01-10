@@ -17,3 +17,11 @@
 .example-button-row .mat-mdc-button-base {
   margin: 8px 8px 8px 0;
 }
+.button-style{
+  background-color: #3361B2;
+  height: 55px;
+  width: 154px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  text-decoration-color: white;
+}
