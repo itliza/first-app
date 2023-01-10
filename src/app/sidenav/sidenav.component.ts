@@ -19,22 +19,22 @@ interface FoodNode {
 
 const TREE_DATA: FoodNode[] = [
   {
-    name: 'Fruit',
-    children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
+    name: 'Settings',
+    children: [{name: 'Users'}, {name: 'Vehicles'}, {name: 'Sources'}],
   },
-  {
-    name: 'Vegetables',
-    children: [
-      {
-        name: 'Green',
-        children: [{name: 'Broccoli'}, {name: 'Brussels sprouts'}],
-      },
-      {
-        name: 'Orange',
-        children: [{name: 'Pumpkins'}, {name: 'Carrots'}],
-      },
-    ],
-  },
+  // {
+  //   name: 'Vegetables',
+  //   children: [
+  //     {
+  //       name: 'Green',
+  //       children: [{name: 'Broccoli'}, {name: 'Brussels sprouts'}],
+  //     },
+  //     {
+  //       name: 'Orange',
+  //       children: [{name: 'Pumpkins'}, {name: 'Carrots'}],
+  //     },
+  //   ],
+  // },
 ];
 
 
@@ -47,6 +47,7 @@ interface ExampleFlatNode {
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
+  styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent {
   private _transformer = (node: FoodNode, level: number) => {
