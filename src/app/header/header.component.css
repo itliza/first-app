@@ -1,4 +1,8 @@
 .text-color {
-  color: #a7e20b;
-  text-decoration-color: aqua;
+  color: #565656;
+  font-weight: bold;
+}
+.text-color-blue {
+  color: #3361b2;
+  font-weight: bold;
 }
