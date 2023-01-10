@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {SidenavComponent} from './sidenav/sidenav.component';
 import {HeaderComponent} from './header/header.component';
+import {FiltersComponent} from './filters/filters.component';
 
 import {MaterialExampleModule} from '../material.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -15,7 +16,8 @@ import {HttpClientModule} from '@angular/common/http';
   declarations: [
     AppComponent,
     SidenavComponent,
-    HeaderComponent
+    HeaderComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
