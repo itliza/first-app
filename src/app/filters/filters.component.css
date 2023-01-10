@@ -13,3 +13,7 @@
 .filters-align {
   float: right;
 }
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
