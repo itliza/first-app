@@ -12,24 +12,42 @@
     <div>
         <ul>
             <li>
-                <div><img src="../../images/icons/notifications.svg" alt=""></div>
-                Notification
+                <mat-icon>library_books</mat-icon>
+                <span class="item-wrapper">Notification</span>
             </li>
         </ul>
         <div class="line"></div>
         <ul>
-            <li>Unassigned orders</li>
-            <li>Assigned orders</li>
-            <li>Route plans</li>
+            <li>
+                <mat-icon>folder_open</mat-icon>
+                <span class="item-wrapper">Unassigned orders</span>
+            </li>
+            <li>
+                <mat-icon>folder</mat-icon>
+                <span class="item-wrapper">Assigned orders</span>
+            </li>
+            <li>
+                <mat-icon> navigation</mat-icon>
+                <span class="item-wrapper">Route plans</span>
+            </li>
         </ul>
         <div class="line"></div>
         <ul>
-            <li>Financial</li>
-            <li>Reporting</li>
+            <li>
+                <mat-icon> monetization_on</mat-icon>
+                <span class="item-wrapper">Financial</span>
+            </li>
+            <li>
+                <mat-icon> rate_review</mat-icon>
+                <span class="item-wrapper">Reporting</span>
+            </li>
         </ul>
         <div class="line"></div>
         <ul>
-            <li>Settings</li>
+            <li>
+                <mat-icon>settings</mat-icon>
+                <span class="item-wrapper">Settings</span>
+            </li>
         </ul>
 
         <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">

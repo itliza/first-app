@@ -18,6 +18,11 @@ li {
     color: white;
     font-size: 16px;
     padding: 18px 0;
+    display: flex;
+    align-items: center;
+}
+.item-wrapper {
+    margin-left: 22px;
 }
 .btn-box {
     display: flex;
