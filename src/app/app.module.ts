@@ -12,6 +12,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
     AppComponent,
     SidenavComponent,
     HeaderComponent,
-    FiltersComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +30,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
