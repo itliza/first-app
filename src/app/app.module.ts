@@ -19,7 +19,7 @@ import {MatButtonModule} from '@angular/material/button';
     AppComponent,
     SidenavComponent,
     HeaderComponent,
-    FiltersComponent
+    FiltersComponent,
   ],
   imports: [
     BrowserModule,
