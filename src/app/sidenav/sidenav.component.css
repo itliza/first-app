@@ -48,3 +48,13 @@ li {
 .btn-green {
     background-color: #5FCF65;
 }
+.personal {
+    display: flex;
+}
+.avatar {
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0;
+}
