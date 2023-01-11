@@ -53,6 +53,9 @@ li {
 } */
 .personal {
     display: flex;
+    /* justify-content: space-between; */
+    padding: 0;
+    align-items: center;
 }
 .avatar {
     width: 48px;
@@ -60,4 +63,17 @@ li {
     background-color: white;
     border-radius: 50%;
     padding: 0;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+.name-style {
+    font-size: 18px;
+    font-weight: 600;
+}
+.role-style {
+    font-size: 14px;
 }
