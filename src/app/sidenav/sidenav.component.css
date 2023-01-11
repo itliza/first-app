@@ -5,7 +5,10 @@
     border-radius: 12px;
     margin: -81px;
     margin-left: 0px;
-
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .logo-box {
     display: flex;
@@ -39,7 +42,7 @@ li {
     margin-right: 8px;
     padding: 0;
 }
-.btn-red {
+/* .btn-red {
     background-color: #F96057;
 }
 .btn-yellow {
@@ -47,7 +50,7 @@ li {
 }
 .btn-green {
     background-color: #5FCF65;
-}
+} */
 .personal {
     display: flex;
 }

@@ -5,11 +5,13 @@
         <li class="btn btn-green"></li>
     </ul> -->
 
-    <div class="logo-box">
-        <img src="https://raw.githubusercontent.com/itliza/first-app/master/src/images/logo.png" alt="logo" width="140px">
+    <div class="logo">
+        <div class="logo-box">
+            <img src="https://raw.githubusercontent.com/itliza/first-app/master/src/images/logo.png" alt="logo" width="140px">
+        </div>
+        <div class="line"></div>
     </div>
-    <div class="line"></div>
-    <div>
+    <div class="navigation">
         <ul>
             <li>
                 <mat-icon>library_books</mat-icon>
@@ -43,11 +45,16 @@
             </li>
         </ul>
         <div class="line"></div>
-        <ul>
+        <ul class="li-settings">
             <li>
                 <mat-icon>settings</mat-icon>
-                <span class="item-wrapper">Settings</span>
+                <span class="item-wrapper" (click)="getName()">Settings</span>
             </li>
+            <!-- <ul class="hidden_options" hidden="true">
+                <li>Users</li>
+                <li>Vehicles</li>
+                <li>Sources</li>
+            </ul> -->
         </ul>
 
         <!-- <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">

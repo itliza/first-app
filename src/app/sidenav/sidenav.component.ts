@@ -6,7 +6,11 @@ import {Component} from "@angular/core";
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.css']
 })
-export class SidenavComponent { }
+export class SidenavComponent { 
+  getName() {
+    alert('Liza');
+  }
+}
 
 // import {FlatTreeControl} from '@angular/cdk/tree';
 // import {Component} from '@angular/core';
