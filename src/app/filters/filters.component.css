@@ -4,6 +4,8 @@
 .example-button{
   width: 154px;
   height: 55px;
+  font-size: 16px;
+  border-radius: 8px;
 }
 .example-action-buttons {
   padding-bottom: 20px;
