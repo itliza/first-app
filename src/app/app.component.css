@@ -6,3 +6,8 @@
 .container {
   flex-flow:row wrap;
 }
+.grid-style .mat-grid-tile .mat-figure{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
