@@ -13,6 +13,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ChatComponent } from './chat/chat.component';
 
 
 
@@ -22,7 +23,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     AppComponent,
     SidenavComponent,
     HeaderComponent,
-    FiltersComponent
+    FiltersComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
