@@ -38,8 +38,6 @@ function connectws() {
     let messageBody = JSON.parse(webSocketMessage.data);
     if(messageBody.pong) return;
     switch (messageBody.function){
-      case "GanttData": DrawGantt(messageBody); break;
-      case "GanttColorMap": GanttColorMap(messageBody); break;
       case "ChatMessage": ChatMessageNew(messageBody.message); break;
       case "ChatMessages": ChatMessageNew(messageBody.message); break;
       case "SSOAuthentication": SendAuthentication(); break;
@@ -74,28 +72,9 @@ function closeWS() {
   //TODO redirect to login page
 }
 
-function DrawGantt(data) {
-  console.log(data);
-}
-function getGnattData(date,plan) {
-  let messageBody = { function: 'GanttData',date: date, plan: plan };
-  ws.send(JSON.stringify(messageBody));
-}
-//Will later be loaded as part of settings json on user
-function GanttColorMap(message) {
-  var colors = message.ColorMap //make this global and store it
-  let nameFromData='start'
-  console.log(colors[nameFromData]);
-  console.log(message.ColorMap);
-}
-function getGanttColorMap(UserID) {
-  let messageBody = { function: 'GanttColorMap',UserID: UserID };
-  ws.send(JSON.stringify(messageBody));
-}
-function MoveGanttStep(PlanID,OldTruckID,NewTruckID,StepID,NewTime) {
-  let messageBody = { function: 'MoveGanttStep',PlanID: PlanID, OldTruckID: OldTruckID, NewTruckID: NewTruckID, StepID: StepID, NewTime: NewTime };
-  ws.send(JSON.stringify(messageBody));
-}
+//web socket above here//
+
+
 
 function ChatSend(ChatRoomID) {
   let message = document.getElementById("chatinput").value;

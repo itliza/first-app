@@ -1,13 +1,7 @@
-
 <script type="text/javascript" src="/ws.js"></script>
-<p>test Liza</p>
-<p>views: 1</p>
-<p>expires in: 86399.999s</p>
-<div>Websocket started</div>
-<input type="button" class='button 'onclick="getGnattData('11.11.2022','plan1')" value="GnattData">
-<input type="button" onclick="getGanttColorMap('11')" value="GanttColorMap">
-<div id="chatwindow" style="width: 500px; height: 100px; border: 1px solid black;"></div>
-<input type="text" id="chatinput">
-<input type="button" onclick="ChatSend(12)" value="Send">
-<input type="button" onclick="GetChatHistory(12)" value="history">
-<input type="button" onclick="GetChatRooms()" value="list rooms">
+
+<div class="chatwindow"></div>
+<input type="text" class='chatinput'>
+<input type="button" class='button' onclick="ChatSend(12)" value="Send">
+<input type="button" class='button' onclick="GetChatHistory(12)" value="History">
+<input type="button" class='button' onclick="GetChatRooms()" value="List rooms">
