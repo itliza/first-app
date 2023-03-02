@@ -16,13 +16,24 @@
   color: white;
 }
 .chatwindow{
-  width: 589px;
+  width: 619px;
   height: 100px;
   border: 1px solid #134ab2;
   margin-top: 10px;
   margin-bottom: 10px;
+  background-color: aliceblue;
 }
 .chatinput{
   padding: 15px 32px;
   margin-right: 10px;
+}
+.chatname{
+  color: #134ab2;
+  margin-top: 20px;
+}
+.template{
+  margin-left: 20px;
+  background-color: #c3d9e4;
+  padding: 20px;
+  width: 630px;
 }
